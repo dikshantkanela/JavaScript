@@ -11,6 +11,8 @@ function firstLast({firstName,lastName}){  //WE only want first/last name
     return `${firstName} ${lastName}`
 }
 
+console.log(firstLast(user2)) //directly give the object as argument and it will get destructured
+
 const movies = [
     {
         title: 'Amadeus',
@@ -66,9 +68,10 @@ const highRated= movies.filter((movie)=>{
 console.log(highRated)
 
 // WITH DESTRUC
-const topRated = movies.filter(({score})=>{
+const topRated = movies.filter(({score})=>{     
     return score>=90;
 
 })
 console.log(topRated)
+
 

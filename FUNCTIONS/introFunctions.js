@@ -1,6 +1,7 @@
 
 function greetPerson(firstName,lastName){
     console.log(`Hello, ${firstName}`);
+
 }
 greetPerson("Dikshant"); // NO Error *until* the lastName is not used inside the defn
 

@@ -8,7 +8,7 @@ form.addEventListener("submit",function(e){
     newEle.innerText=listElement;
     list.append(newEle); //append the input value to ul as li
     input.value="";
-    
+    console.log(e)
 
 
 })

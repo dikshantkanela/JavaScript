@@ -15,16 +15,16 @@ const p2 = new Promise((resolve, reject) => {
 })
 
 
-// //OLD WAY
-// function getData(){
-//     p.then((res)=>{
-//       console.log(res);  // then this after 5 sec as it was queued
+//OLD WAY
+function getData(){
+    p1.then((res)=>{
+      console.log(res);  // then this after 5 sec as it was queued
       
-//     })
-//     console.log("Namaste"); //First this
-// }
+    })  
+    console.log("Namaste"); //First this
+}
 
-// getData();
+getData();
 
 // Using async await
 
