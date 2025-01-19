@@ -15,5 +15,4 @@ while(true){
     }
     alert("Wrong Password Entered!");
     userInput= prompt("Enter Your Password : ");
-   
 }

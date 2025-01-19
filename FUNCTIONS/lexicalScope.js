@@ -6,6 +6,6 @@ function outer() {
     console.log(`My surname is ${surname}`); //this is the usual local variable to inner func
   }
   console.log(surname); // ERROR! inner can access outer variables but outer can't access inner variables in its block!
-  inner();
+  inner(); // this must be called
 }
 outer();
