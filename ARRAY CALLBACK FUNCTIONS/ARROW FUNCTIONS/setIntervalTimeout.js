@@ -4,6 +4,6 @@ setTimeout(()=>{
     console.log("Hey, Again!");
 },3000) 
 
-const repeat = setInterval(()=>{
+setInterval(()=>{
     console.log("YOU GOT HACKED!!!!")
 },2000)
