@@ -5,16 +5,18 @@
 
 console.log("Start");
 
+setTimeout(()=>{
+    console.log("Hello from setTimeout");
+
+},0);
+
 const p1 = new Promise((resolve,reject)=>{
    resolve("Completed");
 })
 
 p1.then(data=>data);
 
-setTimeout(()=>{
-    console.log("Hello from setTimeout");
 
-},0);
 
 console.log("End");
 
