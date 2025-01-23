@@ -9,7 +9,7 @@ const fakeRequestCallback = (url,success,failure)=>{
         }
     },delay)
 }
-
+// THE PROCESS OF KNOWING WHETHER THE ASYNC OP HAS COMPLETED OR FAILED BECOMES VERY COMPLEX AND DIFFICULT TO MAINTAIN!
 fakeRequestCallback("books.com/page1", function(data){
     console.log("It works")
     console.log(data);
