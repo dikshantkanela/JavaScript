@@ -2,27 +2,29 @@
 // microtasks have higher priority
 // task queue : IT STORES THE CALLBACKS FROM setTimeout(), setInterval()
 // they have lower priority
+// sync code> microtask > task 
 
-console.log("Start");
+console.log("Start"); // sync code
 
 setTimeout(()=>{
     console.log("Hello from setTimeout");
-
-},0);
+  
+},0);  // async code + task queue
 
 const p1 = new Promise((resolve,reject)=>{
-   resolve("Completed");
-})
+   resolve("Completed");  // async code + microtask queue storing
+})           
 
-p1.then(data=>data);
-
-
-
-console.log("End");
-
-
+const resolveFunc = async function(){
+    const val = await p1;
+    console.log(val)
+}
+resolveFunc();  // async code + microtask queue handling
 
 
 
-
-console.log("End");
+console.log("End");  // sync code
+const random = ()=>{
+    console.log("WOW")
+}
+random() // sync code
