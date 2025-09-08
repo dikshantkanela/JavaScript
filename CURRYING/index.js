@@ -3,12 +3,12 @@
 
 //In JavaScript, currying is a technique that transforms a function with multiple arguments into a sequence of functions, each taking a single argument. In a curried function, instead of passing all arguments at once, you pass them one at a time.
 
-function add(a) {
-  return function b(b) {
-    return function c(c) {
-      return a + b + c;
-    };
-  };
+function add(a){
+  return function(b){
+     return function(c){
+      return a+b+c;
+     }
+  }
 }
 
 console.log(add(1)(2)(3));

@@ -16,6 +16,7 @@ const p1 = new Promise((resolve,reject)=>{
 })           
 
 const resolveFunc = async function(){
+    console.log("Chaalbaaz");
     const val = await p1;
     console.log(val)
 }

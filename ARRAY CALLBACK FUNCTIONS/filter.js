@@ -14,8 +14,9 @@ const cars = [
     {name:"Hyundai Creta",Mileage:"18kmpl",fuel:"Petrol", body:"SUV"}
 ]
 
-const pertrolCars = cars.filter((car)=>
-     car.fuel==="Petrol"
+const pertrolCars = cars.filter((car)=>{
+   return car.fuel==="Petrol"
+}
 )
 
 console.log(pertrolCars)

@@ -1,7 +1,7 @@
     // fetch("https://swapi.dev/api/people/1") //it gives us a promise
     // .then((res)=>{
     //     console.log("Request resolved! ", res); //gives us a readable stream in body
-    //     return res.json() //.json also gives a promise
+    //     return res.json() //.json also gives a promise because data extraction is asynchronous
         
     // })
 
@@ -23,12 +23,13 @@
     // .catch((err)=>{
     //     console.log(err);
     // })
-
+    
     //USING ASYNc AWAIT!
     const starWars = async ()=>{
     const req1 = await fetch("https://swapi.dev/api/people/1")
+    console.log("HELLO")
     console.log("First Request (proper):");
-    const data = await req1.json()
+    const data = await req1.json();
     console.log(data);
     }
 

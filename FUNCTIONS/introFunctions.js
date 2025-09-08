@@ -1,4 +1,4 @@
-function greetPerson(firstName,lastName){
+function greetPerson( firstName,lastName){
     console.log(`Hello, ${firstName}`);
 
 }

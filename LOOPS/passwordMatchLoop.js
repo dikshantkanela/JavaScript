@@ -8,7 +8,7 @@
 
 // With using break
 const userPassword= "ItzD1ksh@nt";
-userInput=prompt("Enter Your Password : ");
+const userInput=prompt("Enter Your Password : ");
 while(true){
     if(userInput==userPassword){
         break;
@@ -16,3 +16,4 @@ while(true){
     alert("Wrong Password Entered!");
     userInput= prompt("Enter Your Password : ");
 }
+alert("Login Successful!")

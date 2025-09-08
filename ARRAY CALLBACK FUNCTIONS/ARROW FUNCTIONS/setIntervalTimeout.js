@@ -2,8 +2,9 @@
 console.log("Hello!");
 setTimeout(()=>{
     console.log("Hey, Again!");
-},3000) 
+},6000) 
 
 setInterval(()=>{
     console.log("YOU GOT HACKED!!!!")
 },2000)
+console.log("World");

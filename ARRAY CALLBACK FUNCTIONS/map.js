@@ -1,8 +1,13 @@
 //MAP METHOD RETURNS A COPIED ARRAY!
 const singleNums=[5,7,8,12,23,43,21];
 const doubleNums= singleNums.map(function(num){
+    if(num%2 == 0){
+    return num*2; //Copied the singleNum array with doubling each element
+    }
+    else{
+        return num;
+    }
     
-     return num*2; //Copied the singleNum array with doubling each element
 })
 
 console.log(doubleNums)

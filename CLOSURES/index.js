@@ -8,4 +8,4 @@ function x() {
 }
 
 const z = x(); // Returns `y` with access to `a` since the entire lexical scope was returned with y
-z(); // 10
+z(); // 69

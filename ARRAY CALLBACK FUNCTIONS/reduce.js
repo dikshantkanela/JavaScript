@@ -12,7 +12,7 @@ const singleArray = nested.reduce((accumulator,currentValue)=>{
 },[]) // If the initial value of the acc is not definied then it is the first element of the array!
 
 console.log(singleArray)
-
+// occurences
 const words = ['apple', 'banana', 'apple', 'orange', 'banana', 'banana'];
 const occurences = words.reduce((accumulator,currentValue)=>{
     if(accumulator[currentValue]){

@@ -4,5 +4,5 @@ while(true){
     if(userInput=="stop copying me"){
         break;
     }
-console.log("OK I Won't Copy You!")
 }
+console.log("OK I Won't Copy You!")

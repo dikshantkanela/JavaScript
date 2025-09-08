@@ -1,7 +1,7 @@
 const myMath={
     PI: 3.14,
     add: function(x,y){
-        return x+y;
+        console.log( x+y);
     },
     subtract: function(x,y){
         return x-y;
@@ -14,4 +14,5 @@ const myMath={
         return x/y;
     }
 }
-console.log(myMath.multiply(10,20))//200
+console.log(myMath.add(10,20))//30 undefined
+myMath.add(10,20) //30
